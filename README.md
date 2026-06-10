@@ -21,6 +21,45 @@ Laravel is a web application framework with expressive, elegant syntax. We belie
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
+## Steps For Installing
+
+1. Clone the repository
+````
+git clone https://github.com/LuthfiAkhdan/fomotoko-api.git
+````
+
+2. Get in to directory
+````
+cd fomotoko-api
+````
+
+2. Install dependencies
+````
+composer install
+````
+
+3. Copy .env file
+```
+cp .env.example .env
+```
+
+4. Create a database `db_fomotoko` or with your own database and match your `.env` config.
+
+5. Generate application key:
+````
+php artisan key:generate
+````
+
+6. Migrate
+````
+php artisan migrate
+````
+
+7. Serve
+````
+php artisan serve
+````
+
 ## Learning Laravel
 
 Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
