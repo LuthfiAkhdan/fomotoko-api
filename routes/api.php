@@ -25,5 +25,7 @@ Route::delete('/product/{id}', [ProductController::class, 'destroy']);
 // Order routes
 Route::post('/order', [OrderController::class, 'store']);
 Route::get('/order/{id}', [OrderController::class, 'find']);
-Route::delete('/order/{id}', [OrderController::class, 'destroy']);
+// delete selected order items
 Route::delete('/order/{id}/item/{item_id}', [OrderController::class, 'destroy_item']);
+// delete order and delete all order items
+Route::delete('/order/{id}', [OrderController::class, 'destroy']);
